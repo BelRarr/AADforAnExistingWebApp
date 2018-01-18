@@ -1,0 +1,16 @@
+﻿{
+  "routes": [
+    {
+      "path_prefix": "/Home/Contact",
+      "policies": { "unauthenticated_action": "AllowAnonymous" }
+    },
+    {
+      "path_prefix": "/",
+      "policies": { "unauthenticated_action": "RedirectToLoginPage" }
+    },
+    {
+      "path_prefix": "/Home/About",
+      "policies": { "unauthenticated_action": "RejectWith404" }
+    }
+  ]
+}
